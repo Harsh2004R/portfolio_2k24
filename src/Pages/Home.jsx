@@ -7,6 +7,8 @@ import CountUp from 'react-countup';
 import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import Projects from './Projects';
+import Project_details from './Project_details';
+import Mini_Projects from './Mini_Projects';
 
 
 const primaryUrl = "https://img.freepik.com/premium-photo/3d-animation-character-cartoon_113255-10536.jpg?size=626&ext=jpg&ga=GA1.1.1559264531.1691417508&semt=ais_user";
@@ -24,7 +26,7 @@ function Home() {
   return (
     <>
 
-      <Box h={"500vh"} w="100%" bg="#000000" >
+      <Box h={"1000vh"} w="100%" bg="#000000" >
 
 
         <Flex direction={{ base: "column", md: "row" }} w="100%" h={{ base: "auto", md: "50vh" }} bg='#000000' pt="20px">
@@ -100,7 +102,7 @@ function Home() {
               <Box w={{ base: "100%", md: "100%" }} borderRadius={"xl"} h="25vh" bg="#1D4ED8" >
                 <Center display={"flex"} flexDirection={"column"} h="100%" w="100%" p="5">
                   <Text color="#fff" textAlign={"left"} fontWeight={"500"} fontSize={{ base: "3xl", md: "3xl" }}>
-                    <CountUp start={0} end={3} duration={1} />+
+                    <CountUp start={0} end={2} duration={1} />+
                   </Text>
                   <Text color="#fff">
                     Years Experience
@@ -110,7 +112,7 @@ function Home() {
               <Box w={{ base: "100%", md: "100%" }} borderRadius={"xl"} h="25vh" bg="#B91C1C">
                 <Center display={"flex"} flexDirection={"column"} h="100%" w="100%" p="5">
                   <Text color="#fff" textAlign={"left"} fontWeight={"500"} fontSize={{ base: "3xl", md: "3xl" }}>
-                    <CountUp start={0} end={28} duration={2} />+
+                    <CountUp start={0} end={14} duration={2} />+
                   </Text>
                   <Text color="#fff">
                     Projects Completed
@@ -120,7 +122,7 @@ function Home() {
               <Box w={{ base: "100%", md: "100%" }} borderRadius={"xl"} h="25vh" bg="#FACC15"  >
                 <Center display={"flex"} flexDirection={"column"} h="100%" w="100%" p="5">
                   <Text color="#fff" textAlign={"left"} fontWeight={"500"} fontSize={{ base: "3xl", md: "3xl" }}>
-                    <CountUp start={0} end={17} duration={1} />+
+                    <CountUp start={0} end={5} duration={1} />+
                   </Text>
                   <Text color="#fff">
                     Clients Served
@@ -137,9 +139,10 @@ function Home() {
 
 
 
+        <Project_details />
 
 
-
+        <Mini_Projects />
 
 
 
