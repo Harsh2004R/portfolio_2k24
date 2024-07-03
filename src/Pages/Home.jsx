@@ -1,19 +1,20 @@
 import React, { useState } from 'react'
 import Navbar from './Navbar'
-import { Box, Button, Center, Flex, VStack, Text, Image, useColorModeValue } from '@chakra-ui/react';
+import { Box, Button, Center, Flex, Text, Image,  } from '@chakra-ui/react';
 import { Link as ScrollLink, Element } from 'react-scroll';
 import CountUp from 'react-countup';
-// import profile from "../Profile/myPIC.jpg"
 import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs'
+import my_profile from "../Profile/myPIC.jpg"
 import { MdEmail } from 'react-icons/md'
 import Projects from './Projects';
 import Project_details from './Project_details';
 import Mini_Projects from './Mini_Projects';
+import About from './About';
 
 
-const primaryUrl = "https://img.freepik.com/premium-photo/3d-animation-character-cartoon_113255-10536.jpg?size=626&ext=jpg&ga=GA1.1.1559264531.1691417508&semt=ais_user";
-const fallbackUrl = "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100221.jpg?size=626&ext=jpg&ga=GA1.1.1559264531.1691417508&semt=ais_user";
-
+const primaryUrl = "https://img.freepik.com/premium-photo/3d-animation-character-cartoon_113255-10536.jpg?size=626&ext=jpg&ga=GA1.1.1559264531.1691417508&semt=ais_user"; 
+// chose second or this image if you want // "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100221.jpg?size=626&ext=jpg&ga=GA1.1.1559264531.1691417508&semt=ais_user";
+const fallbackUrl = my_profile;
 function Home() {
 
   const [profile, setProfile] = useState(primaryUrl)
@@ -26,7 +27,7 @@ function Home() {
   return (
     <>
 
-      <Box h={"1000vh"} w="100%" bg="#000000" >
+      <Box h={"1500vh"} w="100%" bg="#000000" >
 
 
         <Flex direction={{ base: "column", md: "row" }} w="100%" h={{ base: "auto", md: "50vh" }} bg='#000000' pt="20px">
@@ -145,7 +146,7 @@ function Home() {
         <Mini_Projects />
 
 
-
+        <About/>
 
 
 

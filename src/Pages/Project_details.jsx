@@ -82,7 +82,7 @@ const Project_details = () => {
                     <Box w="100%" h="100%"  >
                         <Flex gap={6} flexDirection={{ base: "column", md: "Column" }} w="100%" h="100%" >
                             <Box w="100%" height={{ base: "auto", md: "auto" }} bg="#1F1F1F" borderRadius={"xl"}>
-                                <Center _hover={{ cursor: 'pointer', borderRadius: "xl", transition: "0.5s ease", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #ffffff" }} h="100%" w="100%" p="3">
+                                <Center  transition="0.5s ease"  _hover={{ cursor: 'pointer', borderRadius: "xl", transition: "0.5s ease", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #ffffff" }} h="100%" w="100%" p="3">
                                     <Text color="#fff" textAlign={"left"} fontWeight={"bold"} fontSize={{ base: "3xl", md: "32px" }}>Turning <Text color="#43A047" as="span">Ideas</Text> into Innovation: Explore Our Projects!</Text>
                                 </Center>
                             </Box>
@@ -117,11 +117,11 @@ const Project_details = () => {
                                             <Center
                                                 // border={"1px solid green"}
                                                 display={"flex"} flexDirection={{ base: "column", md: "row" }} justifyContent={"space-evenly"} h="100%" w="30%" >
-                                                <Box _hover={{ transition: "0.3s ease", fontWeight: "600", bg: "#388E3C", cursor: "pointer", boxShadow: "#FFEB3B 0px 20px 30px -10px" }} p="1" display={"flex"} justifyContent={"space-evenly"} flexDirection={"row"} alignItems={"center"} w={{ base: "50px", md: "80px" }} h={{ base: "28px", md: "35px" }} bg="#C62828" borderRadius={"2xl"}>
+                                                <Box  transition="0.5s ease"  _hover={{ transition: "0.3s ease", fontWeight: "600", bg: "#388E3C", cursor: "pointer", boxShadow: "#FFEB3B 0px 20px 30px -10px" }} p="1" display={"flex"} justifyContent={"space-evenly"} flexDirection={"row"} alignItems={"center"} w={{ base: "50px", md: "80px" }} h={{ base: "28px", md: "35px" }} bg="#C62828" borderRadius={"2xl"}>
                                                     <Text fontSize={{ base: "0", md: "12px" }} color="#fff">Demo</Text>
                                                     <FaVideo size={"20px"} color="#fff" />
                                                 </Box>
-                                                <Box _hover={{ transition: "0.3s ease", fontWeight: "600", bg: "#4E342E", cursor: "pointer", boxShadow: "#FFEB3B 0px 20px 30px -10px" }} p="1" display={"flex"} justifyContent={"space-evenly"} flexDirection={"row"} alignItems={"center"} w={{ base: "50px", md: "80px" }} h={{ base: "28px", md: "35px" }} bg="#1565C0" borderRadius={"2xl"}>
+                                                <Box  transition="0.5s ease"  _hover={{ transition: "0.3s ease", fontWeight: "600", bg: "#4E342E", cursor: "pointer", boxShadow: "#FFEB3B 0px 20px 30px -10px" }} p="1" display={"flex"} justifyContent={"space-evenly"} flexDirection={"row"} alignItems={"center"} w={{ base: "50px", md: "80px" }} h={{ base: "28px", md: "35px" }} bg="#1565C0" borderRadius={"2xl"}>
                                                     <Text fontSize={{ base: "0", md: "12px" }} color="#fff">Github</Text>
                                                     <BsGithub size={"20px"} color="#fff" />
                                                 </Box>
@@ -164,7 +164,7 @@ const Project_details = () => {
                                                         bgImage={`url(${el})`}
                                                         bgSize="cover" objectFit="cover"
                                                         bgPosition="center" alt="Zoomable Image"
-                                                        bgRepeat="no-repeat" _hover={{ transform: 'scale(1.04)', transition: "0.5s ease" }}
+                                                        bgRepeat="no-repeat"  transition="0.5s ease"  _hover={{ transform: 'scale(1.04)', transition: "0.5s ease" }}
                                                         borderRadius={"xl"} w={{ base: "100%", md: "100%" }} h={{ base: "100px", md: "130px" }}>
 
                                                     </Box>
@@ -241,11 +241,11 @@ const Project_details = () => {
                                             <Center
                                                 // border={"1px solid green"}
                                                 display={"flex"} flexDirection={{ base: "column", md: "row" }} justifyContent={"space-evenly"} h="100%" w="30%" >
-                                                <Box _hover={{ transition: "0.3s ease", fontWeight: "600", bg: "#388E3C", cursor: "pointer", boxShadow: "#FFEB3B 0px 20px 30px -10px" }} p="1" display={"flex"} justifyContent={"space-evenly"} flexDirection={"row"} alignItems={"center"} w={{ base: "50px", md: "80px" }} h={{ base: "28px", md: "35px" }} bg="#C62828" borderRadius={"2xl"}>
+                                                <Box  transition="0.5s ease"  _hover={{ transition: "0.3s ease", fontWeight: "600", bg: "#388E3C", cursor: "pointer", boxShadow: "#FFEB3B 0px 20px 30px -10px" }} p="1" display={"flex"} justifyContent={"space-evenly"} flexDirection={"row"} alignItems={"center"} w={{ base: "50px", md: "80px" }} h={{ base: "28px", md: "35px" }} bg="#C62828" borderRadius={"2xl"}>
                                                     <Text fontSize={{ base: "0", md: "12px" }} color="#fff">Demo</Text>
                                                     <FaVideo size={"20px"} color="#fff" />
                                                 </Box>
-                                                <Box _hover={{ transition: "0.3s ease", fontWeight: "600", bg: "#4E342E", cursor: "pointer", boxShadow: "#FFEB3B 0px 20px 30px -10px" }} p="1" display={"flex"} justifyContent={"space-evenly"} flexDirection={"row"} alignItems={"center"} w={{ base: "50px", md: "80px" }} h={{ base: "28px", md: "35px" }} bg="#1565C0" borderRadius={"2xl"}>
+                                                <Box  transition="0.5s ease"  _hover={{ transition: "0.3s ease", fontWeight: "600", bg: "#4E342E", cursor: "pointer", boxShadow: "#FFEB3B 0px 20px 30px -10px" }} p="1" display={"flex"} justifyContent={"space-evenly"} flexDirection={"row"} alignItems={"center"} w={{ base: "50px", md: "80px" }} h={{ base: "28px", md: "35px" }} bg="#1565C0" borderRadius={"2xl"}>
                                                     <Text fontSize={{ base: "0", md: "12px" }} color="#fff">Github</Text>
                                                     <BsGithub size={"20px"} color="#fff" />
                                                 </Box>
@@ -291,7 +291,7 @@ const Project_details = () => {
                                                         bgImage={`url(${el})`}
                                                         bgSize="cover" objectFit="cover"
                                                         bgPosition="center" alt="Zoomable Image"
-                                                        bgRepeat="no-repeat" _hover={{ transform: 'scale(1.04)', transition: "0.5s ease" }}
+                                                        bgRepeat="no-repeat"  transition="0.5s ease"  _hover={{ transform: 'scale(1.04)', transition: "0.5s ease" }}
                                                         borderRadius={"xl"} w={{ base: "100%", md: "100%" }} h={{ base: "100px", md: "130px" }}>
 
                                                     </Box>
