@@ -1,6 +1,6 @@
-import { Box, Flex, Center, Text, Grid, GridItem, Square } from "@chakra-ui/react"
 import React from 'react'
-
+import { Box, Flex, Center, Text, Grid } from "@chakra-ui/react"
+import { Link } from 'react-router-dom'
 import one from "../About_me/one.jpg"
 import two from "../About_me/two.jpg"
 import three from "../About_me/three.jpg"
@@ -13,6 +13,7 @@ import nine from "../About_me/nine.jpg"
 import ten from "../About_me/ten.jpg"
 import eleven from "../About_me/eleven.jpg"
 import twelve from "../About_me/twelve.jpg"
+import thirteen from "../About_me/thirteen.jpg"
 
 
 const mini_box_style = {
@@ -160,7 +161,7 @@ const About = () => {
 
                                     </Box>
 
-                                    <Box bgImage={`url(${three})`} bgSize="cover" objectFit="cover"
+                                    <Box bgImage={`url(${thirteen})`} bgSize="cover" objectFit="cover"
                                         _hover={{
                                             transform: "rotateY(30deg) rotatex(-10deg)",
                                             transition: "transform 0.5s ease",
@@ -199,42 +200,65 @@ const About = () => {
 
 
 
+                    <Flex direction={"column"} w="100%" h="auto">
+                        <Flex direction={"column"} bg="#1F1F1F" w="100%" p={5} h="auto" borderRadius={"2xl"}>
+                            <Box>
 
-                    <Box bg="#1F1F1F" w="100%" p={5} h="100%" borderRadius={"2xl"}>
+                            </Box>
+                            <Text fontSize={{ base: "16px", md: "18px" }} color="#fff" >
+                                I'm <Text fontSize={{ base: "16px", md: "18px" }} as={"span"} color="coral">Harsh Sharma</Text>, a 20-year-old B.Sc PCM student deeply passionate
+                                about technology. My journey into the world of tech started with
+                                a simple curiosity that blossomed into a full-fledged love for
+                                coding and innovation. As the founder of the , <Text fontSize={{ base: "16px", md: "18px" }} as={"span"} color="blue">
+                                    CorsWebDuo </Text>coding
+                                club, I've had the opportunity to not only sharpen my skills but
+                                also lead my team to victory in various Web vision.
 
-                        <Text fontSize={{ base: "16px", md: "18px" }} color="#fff" >
-                            I'm Harsh Sharma, a 20-year-old B.Sc PCM student deeply passionate
-                            about technology. My journey into the world of tech started with
-                            a simple curiosity that blossomed into a full-fledged love for
-                            coding and innovation. As the founder of the , CorsWebDuo coding
-                            club, I've had the opportunity to not only sharpen my skills but
-                            also lead my team to victory in various Web vision.
+                            </Text>
 
-                        </Text>
+                            <Text mt="25px" fontSize={{ base: "16px", md: "18px" }} color="#fff">
+                                The <Text fontSize={{ base: "16px", md: "18px" }} as={"span"} color="lime">MERN</Text> stack has been my playground, allowing me to craft dynamic
+                                and impactful web applications. This journey has been one of perseverance,
+                                creativity, and an unwavering drive to leave a mark in the tech industry.
+                                In my quest for knowledge, I've embraced challenges and setbacks as
+                                opportunities for learning and growth. This mindset has not only helped
+                                me overcome obstacles but has also fueled my curiosity to explore new
+                                technologies and their applications.My collaborative projects across all Indian friends
+                                has provided me with a solid foundation in computer science principles,
+                                which I've applied to real-world projects and challenges. This practical
+                                experience has been invaluable in shaping my skills and preparing me for
+                                a career in the tech industry.
+                            </Text>
 
-                        <Text mt="25px" fontSize={{ base: "16px", md: "18px" }} color="#fff">
-                            The <Text fontSize={{ base: "16px", md: "18px" }} as={"span"} color="lime">MERN</Text> stack has been my playground, allowing me to craft dynamic
-                            and impactful web applications. This journey has been one of perseverance,
-                            creativity, and an unwavering drive to leave a mark in the tech industry.
-                            In my quest for knowledge, I've embraced challenges and setbacks as
-                            opportunities for learning and growth. This mindset has not only helped
-                            me overcome obstacles but has also fueled my curiosity to explore new
-                            technologies and their applications.My collaborative projects across all Indian friends
-                            has provided me with a solid foundation in computer science principles,
-                            which I've applied to real-world projects and challenges. This practical
-                            experience has been invaluable in shaping my skills and preparing me for
-                            a career in the tech industry.
-                        </Text>
+                            <Text mt="25px" fontSize={{ base: "16px", md: "18px" }} color="#fff">
+                                Looking ahead, I am excited about the endless possibilities that technology
+                                holds and am committed to making meaningful contributions to the field,
+                                pushing the boundaries of innovation.
+                            </Text>
+
+                        </Flex>
+                        <Link to="https://www.instagram.com/corswebduo?igsh=MWE4M2IxNzUxYXpwZg==">
+                        <Box mt="20px" w="100%" h={{ base: "auto", md: "auto" }} bg="#1F1F1F" borderRadius={"xl"}>
+                            <Center transition={"0.5s ease"} _hover={{ cursor: 'pointer', borderRadius: "xl", transition: "0.5s ease", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #ffffff" }} h="auto" w="100%" p="3">
+                                <Text
+                                    color="#FFFFFF" textAlign={"left"} fontWeight={"bold"} fontSize={{ base: "3xl", md: "32px" }}
+                                >
+                                    Instagram handle -
+                                    <Text color="#0d74da" as="span">
+                                        {" "}CorsWebDuo
+                                    </Text>
+                                </Text>
+                            </Center>
+                        </Box>
+                    </Link>
+                </Flex>
 
 
-                    </Box>
 
 
 
-
-
-                </Flex >
-            </Box >
+            </Flex >
+        </Box >
         </>
     )
 }

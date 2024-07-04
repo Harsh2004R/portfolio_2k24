@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import Navbar from './Navbar'
-import { Box, Button, Center, Flex, Text, Image,  } from '@chakra-ui/react';
-import { Link as ScrollLink, Element } from 'react-scroll';
+import { Box, Button, Center, Flex, Text, Image, } from '@chakra-ui/react';
+import { Link, Element } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 import CountUp from 'react-countup';
 import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs'
 import my_profile from "../Profile/myPIC.jpg"
@@ -10,9 +11,9 @@ import Projects from './Projects';
 import Project_details from './Project_details';
 import Mini_Projects from './Mini_Projects';
 import About from './About';
+import Profile from './Profile.jsx';
 
-
-const primaryUrl = "https://img.freepik.com/premium-photo/3d-animation-character-cartoon_113255-10536.jpg?size=626&ext=jpg&ga=GA1.1.1559264531.1691417508&semt=ais_user"; 
+const primaryUrl = "https://img.freepik.com/premium-photo/3d-animation-character-cartoon_113255-10536.jpg?size=626&ext=jpg&ga=GA1.1.1559264531.1691417508&semt=ais_user";
 // chose second or this image if you want // "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100221.jpg?size=626&ext=jpg&ga=GA1.1.1559264531.1691417508&semt=ais_user";
 const fallbackUrl = my_profile;
 function Home() {
@@ -27,7 +28,7 @@ function Home() {
   return (
     <>
 
-      <Box h={"1500vh"} w="100%" bg="#000000" >
+      <Box h={"auto"} w="100%" bg="#000000" >
 
 
         <Flex direction={{ base: "column", md: "row" }} w="100%" h={{ base: "auto", md: "50vh" }} bg='#000000' pt="20px">
@@ -37,6 +38,7 @@ function Home() {
           <Box
             //  border={"1px solid red"}
             w="100%" h={{ base: "auto", md: "50vh" }}>
+
             <Navbar />
             <Flex
               // border={"1px solid lime"}
@@ -66,10 +68,10 @@ function Home() {
                   <Box w="100%" m="auto" h="35%" bg="#1F1F1F" borderRadius={"xl"}>
                     <Flex _hover={{ cursor: "pointer" }} w="100%" h="100%" justifyContent={"space-evenly"} alignItems={"center"}>
 
-                      <BsGithub size={"40px"} color="#fff" />
-                      <BsLinkedin size={"40px"} color="#fff" />
-                      <BsInstagram size={"40px"} color="#fff" />
-                      <MdEmail size={"40px"} color="#fff" />
+                      <NavLink to="https://github.com/Harsh2004R"> <BsGithub size={"40px"} color="#fff" /></NavLink>
+                      <NavLink to="https://www.linkedin.com/in/harsh-sharma-0545aa25b/"> <BsLinkedin size={"40px"} color="#fff" /></NavLink>
+                      <NavLink to="https://www.instagram.com/corswebduo?igsh=MWE4M2IxNzUxYXpwZg=="> <BsInstagram size={"40px"} color="#fff" /></NavLink>
+                      <Link to="contact" duration={1200} smooth="true"><MdEmail size={"40px"} color="#fff" /></Link>
 
                     </Flex>
                   </Box>
@@ -136,17 +138,26 @@ function Home() {
         </Flex >
 
 
+
+
         <Projects />
 
+        <Element name="projects">
+          <Project_details />
+        </Element>
+        <Element name="tech">
+          <Mini_Projects />
+        </Element>
+
+        <Element name="about">
+          <About />
+        </Element>
+
+        <Element name="contact">
+          <Profile />
+        </Element>
 
 
-        <Project_details />
-
-
-        <Mini_Projects />
-
-
-        <About/>
 
 
 
